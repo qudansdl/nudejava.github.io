@@ -34,7 +34,7 @@ html, body {
 	font-smoothing: antialiased;
 }
 body {
-	font-family: 'Hind', sans-serif;
+	font-family: "Noto Sans CJK KR";
 	color: #666;
 	font-weight: 400;
 }
@@ -292,7 +292,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', "Noto Sans CJK KR";
 	color: #191a1c;
 	font-weight: 200;
 }
@@ -305,7 +305,7 @@ h6 strong,
 a strong,
 .bold,
 .connected-icons li a h5 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', "Noto Sans CJK KR";
 	font-weight: 700;
 }
 h1 {
@@ -835,7 +835,7 @@ img {
 // Buttons
 ///////////////////////////////////////*/
 .btn {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', "Noto Sans CJK KR";
 	font-size: 11px;
 	font-weight: 700;
 	color: #35383c;
@@ -1195,7 +1195,7 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
 	color: #373b40;
 	font-weight: 700;
 	font-size: 14px;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	letter-spacing: 0;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -1208,7 +1208,7 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
 	color: #373b40;
 	font-weight: 700;
 	font-size: 18px;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	letter-spacing: 0;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -1220,7 +1220,7 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
 	left: 50%;
 	font-size: 16px;
 	line-height: 1.4;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	font-weight: 400;
 	color: #fff;
 	letter-spacing: 0;
@@ -1348,7 +1348,7 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
 }
 .team-caption h4 {
 	color: #fff;
-	font: 400 18px/21px "Hind", sans-serif;
+	font: 400 18px/21px "Hind", "Noto Sans CJK KR";
 	margin: 15px 0 0 0;
 }
 .team-caption p {
@@ -1537,7 +1537,7 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
 	display: inline-block;
 	cursor: pointer;
 	text-transform: capitalize;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	font-weight: 400;
 	font-size: 11px;
 	letter-spacing: 1px;
@@ -1656,7 +1656,7 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
 	}
 }
 .item-caption h4 {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	font-size: 16px;
 	font-weight: 700;
 	margin: 13px auto 8px auto;
@@ -1861,14 +1861,14 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
 	color: #eee;
 }
 .testimonials h4:before {
-	font-family: "Hind", sans-serif;
+	font-family: "Hind", "Noto Sans CJK KR";
 	content: open-quote;
 	font-size: 32px;
 	vertical-align: -5px;
 	margin-right: 5px;
 }
 .testimonials h4:after {
-	font-family: "Hind", sans-serif;
+	font-family: "Hind", "Noto Sans CJK KR";
 	content: close-quote;
 	font-size: 32px;
 	vertical-align: -5px;
@@ -2195,7 +2195,7 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
 }
 .nav-tabs>li>a {
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', "Noto Sans CJK KR";
 	-webkit-transition: color .3s, background-color .3s;
 	-moz-transition: color .3s, background-color .3s;
 	transition: color .3s, background-color .3s;
@@ -2257,7 +2257,7 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
 	color: #47494e;
 	text-transform: none;
 	font-size: 13px;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	font-weight: 700;
 	letter-spacing: 0;
 	-webkit-transition: color 0.35s;
@@ -2423,7 +2423,7 @@ textarea {
 }
 .contact input.submit {
 	width: auto;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', "Noto Sans CJK KR";
 	font-size: 12px;
 	font-weight: 700;
 	color: #fff;
@@ -2490,7 +2490,7 @@ textarea {
 .contact.box-style input.submit,
 input.submit {
 	width: auto;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', "Noto Sans CJK KR";
 	font-weight: 700;
 	color: #fff;
 	border: none!important;
@@ -2686,7 +2686,7 @@ input.submit:hover {
 	letter-spacing: 1px;
 	margin-right: -1px;
 	text-align: center;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	font-weight: 700;
 	font-size: 11px;
 }
@@ -2736,7 +2736,7 @@ input.submit:hover {
 	border-bottom: none;
 }
 .blog-widget h5 {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	font-size: 14px;
 }
 .tags-list {
@@ -2949,7 +2949,7 @@ input.submit:hover {
 	margin-bottom: 10px;
 }
 .post-comment .author a {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	font-size: 16px;
 	font-weight: 700;
 	color: #191a1c;
@@ -3149,7 +3149,7 @@ nav a {cursor: pointer}
 	}
 	.nav>li>a {
 		display: inline-block;
-		font-family: 'Montserrat', sans-serif;
+		font-family: 'Montserrat', "Noto Sans CJK KR";
 		font-size: 12.4px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
@@ -3206,7 +3206,7 @@ nav a {cursor: pointer}
 		width: 14px;
 		height: 14px;
 		padding: 3px 0 0 5px;
-		font-family: "Hind", sans-serif;
+		font-family: "Hind", "Noto Sans CJK KR";
 		font-weight: 900;
 		font-size: 8px;
 		color: #fff;
@@ -3307,7 +3307,7 @@ nav a {cursor: pointer}
 		border-right: 0px;
 	}
 	.megamenu-content .mg-col h5 {
-		font-family: "Montserrat", sans-serif;
+		font-family: "Montserrat", "Noto Sans CJK KR";
 		font-size: 11px;
 		font-weight: 700;
 		color: #ccc;
@@ -3330,7 +3330,7 @@ nav a {cursor: pointer}
 		margin-bottom: 10px;
 		font-weight: 700;
 		line-height: 1.4;
-		font-family: "Montserrat", sans-serif;
+		font-family: "Montserrat", "Noto Sans CJK KR";
 	}
 	.megamenu .mega-col-title:hover {
 		background-color: transparent!important;
@@ -3962,7 +3962,7 @@ nav.navbar.nav-small {
 }
 #countdown-timer h2,
 #countdown-timer h6 {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	font-weight: 700;
 	line-height: 1;
 	margin-bottom: 0;
@@ -4054,7 +4054,7 @@ nav.navbar.nav-small {
 }
 #twitter-feed-slider .timePosted,
 #twitter-feed-list .timePosted {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 9px;
@@ -4708,7 +4708,7 @@ ul {
 	display: inline-block;
 	cursor: pointer;
 	text-transform: capitalize;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Noto Sans CJK KR";
 	font-weight: 400;
 	font-size: 11px;
 	letter-spacing: 1px;
