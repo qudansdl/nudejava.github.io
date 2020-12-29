@@ -526,18 +526,20 @@
         });
         $('.nav li a, .btn-scroll').on('click', function () {
             var $anchor = $(this);
-            function scrollToAnchor() {
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top - offsetVar
-                }, 1000, 'easeInOutExpo');
-                event.preventDefault();
-            }
-            if ($(window).width() > 992) {
-                var offsetVar = '59';
-                scrollToAnchor();
-            } else {
-                var offsetVar = '0';
-                scrollToAnchor();
+            if($anchor.attr('href')) {
+                function scrollToAnchor() {
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top - offsetVar
+                    }, 1000, 'easeInOutExpo');
+                    event.preventDefault();
+                }
+                if ($(window).width() > 992) {
+                    var offsetVar = '59';
+                    scrollToAnchor();
+                } else {
+                    var offsetVar = '0';
+                    scrollToAnchor();
+                }
             }
         });
         function navSmall() {
