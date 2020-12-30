@@ -46,8 +46,7 @@
                                     <li><a href="#syncinfra">Sync Infra</a></li>
                                 </ul>
                             </li>
-                            <!-- <li><a href="#contact">업무제휴</a></li> -->
-                            <li><a href="#contact-info">업무제휴</a></li>
+                            <li><a href="#contact">업무제휴</a></li>
                             <li><a href="recurit.html">채용</a></li>
                             <li class="nav-separator"></li>
                             <li  class="nav-icon"><a href="http://facebook.com" target="_blank"><i class="ion-social-facebook"></i></a></li>
@@ -318,7 +317,6 @@
         <!-- End Contact Info -->
 
         <!-- Contact Form -->
-        <!--
         <section id="contact" class="pt120 pb100">
             <div class="container">
                 <div class="row">
@@ -347,7 +345,7 @@
                                 <textarea name="message" rows="9" id="message" placeholder="요청 내용 *"></textarea>
                             </div>
                             <div class="col-md-12">
-                                <input type="submit" class="submit btn btn-lg btn-primary" id="submit" value="저장"/>
+                                <input type="button" class="submit btn btn-lg btn-primary" id="submit" value="저장" onclick="submitToAPI(event)"/>
                             </div>
 
                         </form>
@@ -356,7 +354,6 @@
                 </div>
             </div>
         </section>
-        -->
         <!-- End Contact Form -->
 
         <!-- Map -->
@@ -382,4 +379,66 @@
         <script src="js/scripts.js"></script>
 
     </body>
+    <script>
+        function submitToAPI(e) {
+            e.preventDefault();
+
+            if ($("#name").val()=="") {
+                alert ("이름을 입력하세요");
+                return;
+            }
+            if ($("#phone").val()!=="") {
+                var mobilere = /[0-9]{10}/;
+                if (!mobilere.test($("#phone").val())) {
+                    alert("유효한 전화번호를 입력하세요");
+                    return;
+                }
+            }
+            if ($("#email").val()=="") {
+                alert ("이메일 주소를 입력하세요");
+                return;
+            }
+
+            var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+            if (!reeamil.test($("#email").val())) {
+                alert ("유효한 이메일 주소를 입력하세요");
+                return;
+            }
+
+            var name = $("#name").val();
+            var phone = $("#phone").val();
+            var email = $("#email").val();
+            var company = $("#company").val();
+            var message = $("#message").val();
+
+
+            var data = {
+                email : email,
+                subject : "Sync 제휴 요청",
+                message : "이름 :" + name + "\n" +
+                    "전화번호 :" + phone + "\n" +
+                    "회사 :" + company + "\n" +
+                    "내용 :" + message + "\n"
+            };
+
+            $.ajax({
+                type: "POST",
+                url : "https://pebjw1iuq0.execute-api.ap-northeast-2.amazonaws.com/contact/contact",
+                contentType: "application/json",
+                data: JSON.stringify(data),
+                success: function (data, textStatus, request) {
+                    alert("제휴 요청 감사드립니다. 빠른 시일안에 연락드리겠습니다.");
+                    document.getElementById("contactform").reset();
+                },
+                error: function (request, textStatus, errorThrown) {
+                    if(errorThrown === '')
+                    {
+                        alert("제휴 요청 감사드립니다. 빠른 시일안에 연락드리겠습니다.");
+                        document.getElementById("contactform").reset();
+                    }else{
+                        alert("제휴 요청에 실패했습니다. 불편하시더라도 02-3489-1115로 연락바랍니다.");
+                    }
+                }});
+        }
+    </script>
 </html>
